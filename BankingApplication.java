@@ -69,7 +69,7 @@ public class BankDemo1 {
 		int pin2=0;
 Class.forName("com.mysql.cj.jdbc.Driver");
 System.out.println("Driver class load");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root","rohith123");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root","Kollapavan.03");
 PreparedStatement st4=con.prepareStatement("insert into account values(?,?,?,?)");
 PreparedStatement st=con.prepareStatement("select * from account where accno=?");
 PreparedStatement st3=con.prepareStatement("update account set balance=? where accno=?");
